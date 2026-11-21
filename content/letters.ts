@@ -1,0 +1,11 @@
+// DRAFT COPY: no letters were supplied with the brief. Replace paragraphs with your exact wording.
+export type Letter={id:string;label:string;heading:string;paragraphs:string[];closing:string;cta:string};
+export const letterOne:Letter={id:"one",label:"LETTER NO. 01 — THE HUMAN SIDE",heading:"Dear Diabetes,",
+paragraphs:["I never sent you an invitation. You arrived anyway, and you have been in every room I have walked into since.","You are in the quiet of 3 a.m. when I wake to check a number. You are in the meal I have to calculate before I can enjoy it. You are in the tiredness that sleep does not fix.","I am angry sometimes. I am afraid sometimes. Mostly I am tired of being brave about something I never signed up for.","I wonder what it would be like to forget you for a day. I wonder if the people I love know how much I carry without saying a word.","I am not asking you to leave. I know you will not. I am asking for room to be more than the work you give me."],
+closing:"I didn’t choose you. But I still have a life to live.",cta:"READ THE REPLY"};
+export const letterTwo:Letter={id:"two",label:"LETTER NO. 02 — THE OTHER SIDE",heading:"Dear You,",
+paragraphs:["This reply is a literary voice, written to give shape to what is hard to say. It is not a claim that diabetes thinks or feels.","If it could speak, it would not ask for thanks. Nothing about this is a gift, and you owe it no gratitude.","It would say that your exhaustion is real, that your anger is fair, and that every number you check is effort most people never see.","It would say that you have been doing something difficult, daily, with little applause.","And it would say that the person who carries all this was never the condition itself."],
+closing:"You are more than Diabetes.",cta:""};
+export const categories=["The Beginning","The Difficult Days","Things People Don’t See","Love and Relationships","Dreams Beyond Diabetes","Finding My Own Way"];
+// Sample cards are FICTIONAL. Replace with a moderated database query later.
+export const sampleStories=categories.map((c,i)=>({id:`s${i}`,category:c,title:["The week everything changed","A night I counted hours","The explanation I stopped giving","Telling someone I love","The trip I planned anyway","Learning my own rhythm"][i],excerpt:"Sample text for layout only. Not a real person’s story."}));

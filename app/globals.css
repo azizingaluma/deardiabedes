@@ -1,0 +1,12 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{background:#063D32;color:#F1EBDD;font-family:var(--f-sans)}
+.velvet{background:radial-gradient(ellipse at 50% 30%,#174638,#063D32 55%,#10251F)}
+.paper{background:#F1EBDD;color:#242722;box-shadow:0 30px 60px -20px #0008}
+.reveal{opacity:0;transform:translateY(10px);transition:opacity 1s,transform 1s}
+.reveal.in{opacity:1;transform:none}
+.flap{transform-origin:top;transition:transform .9s ease;backface-visibility:hidden}
+.open .flap{transform:rotateX(180deg)}
+.letter{transition:transform 1.2s ease .6s}
+.open .letter{transform:translateY(-55%)}
+:focus-visible{outline:2px solid #B8A27C;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
